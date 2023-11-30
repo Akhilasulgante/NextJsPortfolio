@@ -9,10 +9,10 @@ const skills = () => {
       </h2>
       {/* <div className="w-full"> */}
       <iframe
-        width="105%"
-        height="422"
+        width="100%"
+        height="424"
         frameborder="0"
-        src="https://observablehq.com/embed/bd919d45bc83756d?cells=chart"
+        src="https://observablehq.com/embed/2f0505f1863422ba?cells=chart"
       ></iframe>
       {/* </div> */}
     </div>

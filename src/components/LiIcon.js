@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 const LiIcon = ({ reference }) => {
   const { scrollYProgress } = useScroll({
     target: reference,
-    offset: ["center start", "center end"],
+    offset: ["center end", "center center"],
   });
   return (
     <figure className="absolute left-0 stroke-dark dark:stroke-light">
@@ -26,7 +26,7 @@ const LiIcon = ({ reference }) => {
           r="20"
           className="stroke-[5px] fill-light dark:fill-dark"
           style={{
-            PathLength: scrollYProgress,
+            pathLength: scrollYProgress,
           }}
         />
         <circle
