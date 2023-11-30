@@ -60,15 +60,15 @@ const about = () => {
                 About me
               </h2>
               <p className="font-medium">
-                Hello there, I'm Akhila, a dedicated software developer driven
+                Hello there, I am Akhila, a dedicated software developer driven
                 by my love for developing stunning, practical, and user-centric
                 applications. With 3 years of industry experience, I continually
                 seek fresh, inventive approaches to transform my ideas into
                 vibrant realities.
               </p>
               <p className="my-4 font-medium">
-                I see technology as more than just lines of code. It's a gateway
-                to solving problems and crafting intuitive, delightful
+                I see technology as more than just lines of code. It is a
+                gateway to solving problems and crafting intuitive, delightful
                 experiences that users truly enjoy.
               </p>
               <p className="font-medium">
