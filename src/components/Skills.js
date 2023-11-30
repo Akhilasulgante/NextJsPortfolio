@@ -8,7 +8,12 @@ const skills = () => {
         Skills
       </h2>
       <div className="w-full">
-        <ObservableNotebook />
+        <iframe
+          width="100%"
+          height="422"
+          frameborder="0"
+          src="https://observablehq.com/embed/bd919d45bc83756d?cells=chart"
+        ></iframe>
       </div>
     </div>
   );
