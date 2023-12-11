@@ -16,7 +16,7 @@ const skills = () => {
       ></iframe> */}
       <iframe
         width="100%"
-        height="700"
+        height="400"
         frameborder="0"
         src="https://observablehq.com/embed/0d85e33652e41561?cells=viewof+animate%2Cviewof+selection"
       ></iframe>
