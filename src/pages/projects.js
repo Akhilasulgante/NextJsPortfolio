@@ -5,7 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
 import Link from "next/link";
 import Image from "next/image";
-import project1 from "../../public/images/projects/ResearchProject.png";
+import project1 from "../../public/images/projects/research.gif";
 import sharkTank from "../../public/images/projects/SharkTank.gif";
 import peko from "../../public/images/projects/pekomeals.png";
 import algoproject from "../../public/images/projects/AlgoProject.gif";
@@ -16,7 +16,15 @@ import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({
+  type,
+  title,
+  summary,
+  img,
+  link,
+  github,
+  projecturl,
+}) => {
   return (
     <article className="w-full flex items-center justify-between relative rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 rounded-br-2xl dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light sm:-right-2 sm:h-[102%] sm:w-full sm:rounded-[1.5rem]" />
@@ -60,7 +68,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             <GithubIcon />
           </Link>
           <Link
-            href={github}
+            href={projecturl}
             target="_blank"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
           >
@@ -91,11 +99,12 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="Research - Data Viz tool for Identifying bias in ML datasets"
-                summary="In my current research, I'm developing an interactive web-based data visualization tool. Its purpose is to help identify biases within machine learning datasets, contributing to the creation of fairer models and the elimination of disadvantages faced by underrepresented communities."
-                link="https://medium.com/@asulgante39/discrimination-by-default-unmasking-the-social-ramifications-of-biased-data-5c2dce57f90d"
+                summary="Built a tool to empower users to identify and understand potential biases within their ML datasets, fostering transparency and accountability in machine learning processes. Through visualization techniques, the tool provides a dynamic environment for users to navigate through datasets, gaining insights into their data, and find co-relation between features. The tool will also enable users to understand all aspect of training and evaluating an ML model by authorizing complete control to users over the training features, train-train split and interpretation of evaluation matrix for bias detection."
+                link="https://github.com/Akhilasulgante/ResearchWebpage"
                 type="Machine Learning and Data Visualization"
-                github="https://github.com/Akhilasulgante/Research"
+                github="https://github.com/Akhilasulgante/ResearchWebpage"
                 img={project1}
+                projecturl="https://research-webpage.vercel.app/"
               />
             </div>
             <div className="col-span-12">
@@ -106,6 +115,7 @@ const projects = () => {
                 type="Data Visualization - D3.js, Vega-lite, Tableau"
                 github="https://github.com/Akhilasulgante/SharkTankInViz"
                 img={sharkTank}
+                projecturl="https://akhilasulgante.github.io/SharkTankInViz/"
               />
             </div>
             <div className="col-span-12">
@@ -116,6 +126,7 @@ const projects = () => {
                 type="Web Development - HTML, CSS, JavaScript, React, Mongo, Express.js, Node,js "
                 github="https://github.com/Akhilasulgante/peko"
                 img={peko}
+                projecturl="https://peko2.onrender.com/"
               />
             </div>
             <div className="col-span-12">
@@ -126,6 +137,7 @@ const projects = () => {
                 type="Python, String matching Algorithms, Data Analysis, Data cleaning"
                 github="https://github.com/Akhilasulgante/cordiance-experential-project"
                 img={algoproject}
+                projecturl="https://github.com/Akhilasulgante/cordiance-experential-project"
               />
             </div>
             <div className="col-span-12">
@@ -136,6 +148,7 @@ const projects = () => {
                 type="Python, Natural Language Processing, NLTK, Transformer Models"
                 github="https://github.com/Akhilasulgante/hate-speech-detection-NLP-Project-"
                 img={hateSpeech}
+                projecturl="https://github.com/Akhilasulgante/hate-speech-detection-NLP-Project-"
               />
             </div>
             <div className="col-span-12">
@@ -146,6 +159,7 @@ const projects = () => {
                 type="HTML, CSS, JavaScript, React"
                 github="https://github.com/Akhilasulgante/Soapiphany"
                 img={Soapiphany}
+                projecturl="http://skillful-toys.surge.sh/"
               />
             </div>
             <div className="col-span-12">
@@ -156,6 +170,7 @@ const projects = () => {
                 type="HTML, CSS, JavaScript, React"
                 github="https://observablehq.com/@akhila/pokemonproject"
                 img={pokemon}
+                projecturl="https://observablehq.com/@akhila/pokemonproject"
               />
             </div>
           </div>
