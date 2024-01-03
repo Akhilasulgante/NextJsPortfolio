@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company, companyLink, time, work }) => {
   const ref = useRef(null);
   return (
     <li
@@ -26,7 +26,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           </a>
         </h3>
         <span className="captialize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
-          {time} | {address}
+          {time}
         </span>
         <p className="font-medium w-full md:text-sm">{work}</p>
       </motion.div>
@@ -55,35 +55,33 @@ const Experience = () => {
             position="Teaching Assistant"
             company="Northeastern University"
             companyLink="https://www.northeastern.edu/"
-            time="May 2022 - Present"
-            address="San Francisco, CA"
-            work="I am working as a Teaching Assistant for 'Algorithm' and worked as a TA for 'Foundations of Computer Science' in the previous semester. In 'Foundations of Computer Science,' I designed lesson plans, taught computer science concepts to students with no prior background, graded assignments, and addressed queries. In the 'Algorithm' course, I hold office hours to assist students with complex algorithm questions and evaluate their assignments. These roles allowed me to contribute to students' learning experiences, fostering their understanding of computer science fundamentals and algorithmic problem-solving skills."
+            time="May 2022 - Dec 2023"
+            // address="San Francisco, CA"
+            work="I worked as a Teaching Assistant for 'Algorithm' and 'Foundations of Computer Science'. In 'Foundations of Computer Science,' I designed lesson plans, taught computer science concepts to students with no prior CS background, graded assignments, and addressed queries. In the 'Algorithm' course, I held office hours to assist students with complex algorithm questions and evaluated their assignments. These roles allowed me to contribute to students' learning experiences, fostering their understanding of computer science fundamentals and algorithmic problem-solving skills."
           />
           <Details
             position="Summer Analyst"
             company="Goldman Sachs"
             companyLink="https://www.goldmansachs.com/index.html"
             time="Jul 2023 - Sept 2023"
-            address="Tokyo, Japan"
-            work="As my internship project, I developed an enhanced retry feature within a client reporting platform. My role encompassed the conceptualization and execution of an enhanced retry mechanism, strategically designed to target and reprocess only the specific data sections that failed. This innovative approach stands in contrast to the previous process, which required a full report generation retry even in cases where only a single data section failed. The successful implementation of this feature resulted in remarkable outcomes. Over a span of just 30 days, it delivered substantial time savings, equating to an impressive 365.4 hours of productivity gains. Moreover, it had a profound impact on our data processing infrastructure, leading to an exceptional 87% reduction in data processing calls to Apache Flink, thereby optimizing system resources and enhancing overall platform efficiency. "
+            // address="Tokyo, Japan"
+            work="As my internship project, I led multiple key initiatives in enhancing a report delivery platform, notably developing an advanced retry mechanism in Java and Spring Boot, resulting in a remarkable reduction of 365.4 hours of retry time within 30 days and an 87% decrease in Apache Flink calls by eliminating redundant data pipelines. Additionally, I revamped the application’s UI with JavaScript, React, HTML, and CSS to reflect these improvements. I ensured robustness by creating a comprehensive Test Plan document and executing various testing methodologies like Unit, Integration, System, Stress, and Regression testing using Junit, Mockito, JMeter, and Swagger UI for API quality and reliability. Lastly, I established efficient CI/CD processes via GitLab, ensuring seamless feature development and deployment."
           />
           <Details
             position="Account Specialist"
             company="Amazon"
             companyLink="https://www.aboutamazon.com/about-us"
             time="May 2020 - Dec 2021"
-            address="Bengaluru, India"
-            work="I led the development of advertising campaigns for more than 120 brands, resulting in a remarkable 40% increase in product visibility within just one year.
-Furthermore, I leveraged data-driven decision-making by using Tableau to analyze Voice of Customer (VoC) data. This analytical effort led to the creation of a highly efficient process aimed at expediting customer query resolution. It reduced the previous average response time of 5 business days to only 2 business days. This not only greatly enhanced customer satisfaction but also improved operational efficiency within the organization.
-These successes emphasize my expertise in both strategic marketing and data analysis, showcasing my ability to promote business growth and enrich customer experiences through data-driven insights and innovative problem-solving."
+            // address="Bengaluru, India"
+            work="I spearheaded the implementation of Tableau dashboards and partnered with brand representatives to devise data-powered ad campaign strategies for 120+ brands, culminating in a remarkable average 40% surge in ROI of ad revenue for vendors. Additionally, my collaboration across cross-functional teams to analyze the Customer Feedback pipeline led to the creation of an optimized process, slashing customer query resolution time from 5 to 2 business days, streamlining operations significantly."
           />
           <Details
             position="Assitant Application Developer"
             company="Fujitsu"
             companyLink="https://www.fujitsu.com/global/"
             time="Dec 2017 - Mar 2020"
-            address="Pune, India"
-            work="In my  role, I designed efficient algorithms and developed robust Java software components. I rigorously tested these components using JUnit, ensuring top-notch quality. Additionally, I bridged language gaps by drafting precise Japanese specification documents, enhancing client communication. By proactively addressing issues in Integration Testing, I reduced project timelines by 30%. I also facilitated bi-weekly module reviews, fostering continuous improvement within the team. My focus on algorithm design, multilingual communication, problem-solving, and quality assurance highlighted my dedication to exceptional software development."
+            // address="Pune, India"
+            work="I played a pivotal role in the app's advancement, enhancing the user interface and achieving a 25% speed boost in loading while significantly elevating user experience through JavaScript and React for frontend development, complemented by Java for backend operations. My adept handling of Integration Testing issues resulted in a 30% reduction in phase time, resolving challenges ahead of schedule. Additionally, I contributed substantively by conducting code reviews, bi-weekly team quality assessments, and crafted improvement strategies, ensuring sustained performance excellence of the team."
           />
         </ul>
       </div>

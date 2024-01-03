@@ -39,8 +39,8 @@ export default function Home() {
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 As an adept Software Developer with proven experience in
-                Back-end engineering and skills in Machine Learning, Web
-                development, and Data Visualization, I am committed to
+                Full-stack engineering and skills in Web development, Data
+                Visualization, and Machine Learning. I am committed to
                 translating visionary ideas into pioneering applications.
                 Currently seeking Software Developer opportunities starting
                 February 2024.
